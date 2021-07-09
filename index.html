@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="https://raw.githubusercontent.com/luojiong/bimgl-docs/gh-pages/static/bim-gl.css">
     <title>docs</title>
     <style>
+        .bimgl-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.bimgl-loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255,255,255,.5);
+    flex-direction: column;
+}
+.bimgl-progress{
+    color: #000;
+    font-size: 20px;
+}
         html,body,#viewer{
             width: 100%;
             margin: 0;
